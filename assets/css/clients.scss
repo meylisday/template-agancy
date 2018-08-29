@@ -1,0 +1,14 @@
+.clients{
+    background-color: $white;
+    .container{
+        .columns{
+            margin-top: 3em;
+            margin-bottom: 3em;
+            .column{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

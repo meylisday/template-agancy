@@ -1,0 +1,117 @@
+.bg-header-img{
+    background: url("../images/tiko-giorgadze-441893-unsplash.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+    }
+}
+.section-header{
+    min-height: 700px;
+    height: 100vh;
+    position: relative;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.section {
+    background-color: $grey-lighter;
+
+    .wrapper-box-title {
+        padding-top: 250px;
+    }
+
+    .container {
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__menu {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+
+                span {
+                    width: 20px;
+                    height: 2px;
+                    background-color: $white;
+                    margin: 2px;
+                }
+            }
+        }
+
+        .header-box-title {
+            text-align: center;
+            color: $white;
+
+            &__subtitile {
+                font-size: 14px;
+                letter-spacing: 3px;
+                line-height: 24px;
+                font-family: "Work Sans", sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            &__title {
+                font-size: 48px;
+                letter-spacing: 1px;
+                font-family: "Playfair Display", sans-serif;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            &__under-title {
+                font-size: 48px;
+                letter-spacing: 1px;
+                font-family: "Playfair Display", sans-serif;
+                font-style: italic;
+                line-height: 60px;
+            }
+        }
+    }
+
+    .arrow-link {
+        &__scroll-text {
+            display: block;
+            position: absolute;
+            color: darken($white, 40%);
+            text-decoration: none;
+            text-align: center;
+            font-size: 2rem;
+            bottom: 65px;
+            left: 50%;
+            margin-left: -25px;
+            width: 50px;
+            height: 50px;
+            line-height: 54px;
+            border-radius: 50%;
+            border: 1px solid;
+            transition: color .5s;
+            &:hover{
+                color: darken($white, 20%);
+            }
+        }
+    }
+}
+
+.svg-inline--fa.fa-w-10 {
+    width: 0.4em;
+}

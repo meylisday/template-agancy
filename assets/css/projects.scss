@@ -1,0 +1,75 @@
+.projects {
+    background-color: $white;
+
+    .container {
+        .projects-title {
+            text-align: center;
+
+            h1 {
+                font-size: 38px;
+                font-family: $font-family-display;
+                font-weight: bold;
+            }
+
+            p {
+                width: 54%;
+                margin: 1em auto 0;
+                font-size: 15px;
+                color: rgb(95,95,95);
+            }
+        }
+
+        .projects-gallery {
+            margin-top: 5em;
+            margin-bottom: 3em;
+
+            .columns.is-gapless:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            .columns {
+                .column {
+                    background-color: #000;
+                    position: relative;
+                    height: 350px;
+                    img{
+                        object-fit:fill;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.column:hover .column-ovarlay {
+    opacity: 1;
+    background: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+.column-ovarlay {
+    position: absolute;
+    transition: 0.8s ease;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: lighten(#000, 10%);
+    display: flex;
+    align-items: center;
+    p {
+        width: 100%;
+        text-align: center;
+        color: $white;
+        font-family: $font-family-display;
+        font-size: 24px;
+        .column-ovarlay__subtitle{
+            font-size: 14px;
+            font-family: $font-family-work-suns;
+        }
+    }
+}

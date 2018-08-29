@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import "~bulma/bulma";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700');
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+@import "./node_modules/bulma/sass/base/_all.sass";
+@import "./node_modules/bulma/sass/elements/button.sass";
+@import "./node_modules/bulma/sass/elements/container.sass";
+@import "./node_modules/bulma/sass/elements/form.sass";
+@import "./node_modules/bulma/sass/elements/title.sass";
+@import "./node_modules/bulma/sass/layout/hero.sass";
+@import "./node_modules/bulma/sass/layout/section.sass";
+
+$font-family-work-suns: "Work Sans", sans-serif;
+$font-family-display: "Playfair Display", sans-serif;
+$white: rgb(255,255,255);
+$black: #252525;
+@import "swiper.css";
+@import 'header.scss';
+@import 'about.scss';
+@import 'numbers.scss';
+@import 'projects.scss';
+@import 'slider.scss';
+@import 'clients.scss';
+@import 'blog.scss';

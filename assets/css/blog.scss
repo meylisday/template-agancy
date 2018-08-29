@@ -1,0 +1,74 @@
+.blog {
+    background-color: #fafafa;
+
+    .container {
+        .columns {
+            padding: 5em;
+
+            .column {
+                padding: 1em;
+
+                .post {
+                    .wrap-img {
+                        transition: opacity 0.5s;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+
+                    .teg-category {
+                        a {
+                            position: absolute;
+                            display: block;
+                            background-color: #252525;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            text-align: center;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            padding: 5.5px 15px;
+                            min-width: 90px;
+                            margin-left: 15px;
+                            bottom: 280px;
+                            color: #fff;
+                            transition: background-color 0.5s;
+
+                            &:hover {
+                                background-color: #393939;
+                            }
+                        }
+                    }
+                }
+
+                .wrap-post {
+                    background-color: $white;
+                    padding: 1em;
+
+                    .post-title {
+                        a {
+                            color: $black;
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-family: $font-family-display;
+                        }
+                    }
+
+                    .post-date p {
+                        font-family: $font-family-work-suns;
+                        color: #171717;
+                        font-size: 0.84rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        padding-top: 0.8em;
+                        padding-bottom: 0.8em;
+                    }
+                    .post-text p{
+                        font-family: $font-family-work-suns;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
