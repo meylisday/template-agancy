@@ -1,0 +1,63 @@
+.footer {
+    background: #000000;
+}
+
+.footer-column__item {
+    &--title {
+        font-size: 22px;
+        color: #fff;
+        font-family: $font-family-display;
+        font-weight: bold;
+    }
+    &--text {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        color: #fff;
+        font-family: $font-family-display;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgb(233, 233, 233);
+        font-weight: 400;
+    }
+    &--social {
+        .list-social {
+            li {
+                display: inline;
+                margin-right: 0.8em;
+                img {
+                    width: 16px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+}
+
+.list-twits {
+    margin-top: 1.5em;
+    &__item {
+        margin-bottom: 1.2em;
+        display: flex;
+        img {
+            width: 16px;
+            height: 32px;
+        }
+        p {
+            color: #fff;
+            font-size: 15px;
+            font-family: $font-family-work-suns;
+            margin-left: 1em;
+        }
+    }
+}
+
+.list-instagram {
+	margin-top: 1.8em;
+    display: grid;
+    grid-template-rows: 75px 75px;
+    grid-template-columns: 100px 100px 100px 100px;
+    &__item {
+        width: 85px;
+        height: 85px;
+    }
+}
