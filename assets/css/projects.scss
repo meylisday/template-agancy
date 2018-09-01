@@ -22,11 +22,16 @@
         .projects-gallery {
             margin-top: 5em;
             margin-bottom: 3em;
-
+            @include mobile {
+                margin: 0 auto;
+                width: 70%;
+                margin-top: 5em;
+                margin-bottom: 3em;
+            }
             .columns.is-gapless:not(:last-child) {
                 margin-bottom: 0;
-            }
 
+            }
             .columns {
                 .column {
                     background-color: #000;

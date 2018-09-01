@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import "~bulma/bulma";
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700');
 @import "./node_modules/bulma/sass/utilities/_all.sass";
 @import "./node_modules/bulma/sass/base/_all.sass";
@@ -15,6 +15,8 @@ $font-family-work-suns: "Work Sans", sans-serif;
 $font-family-display: "Playfair Display", sans-serif;
 $white: rgb(255,255,255);
 $black: #252525;
+
+@import 'media-queries.scss';
 @import "swiper.css";
 @import 'header.scss';
 @import 'about.scss';
@@ -23,3 +25,6 @@ $black: #252525;
 @import 'slider.scss';
 @import 'clients.scss';
 @import 'blog.scss';
+@import 'contacts.scss';
+@import 'footer.scss';
+
